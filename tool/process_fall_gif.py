@@ -8,7 +8,8 @@ from PIL import Image, ImageSequence
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_SOURCE = Path(r"D:\PRM393\assets_pack\runner\te\runner3.gif")
+ASSET_PACK_DIR = ROOT / "assets_pack"
+DEFAULT_SOURCE = ASSET_PACK_DIR / "runner" / "te" / "runner3.gif"
 RUNNER_DIR = ROOT / "assets" / "images" / "runners"
 DEFAULT_FALL_DESTINATION = RUNNER_DIR / "runner3_fall.webp"
 DEFAULT_RECOVER_DESTINATION = RUNNER_DIR / "runner3_recover.webp"
